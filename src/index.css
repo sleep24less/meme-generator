@@ -28,7 +28,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 800px;
   width: 800px;
   background: #ffffff;
   box-shadow: 13px 13px 26px #1c1c1c,
@@ -126,13 +125,50 @@ body {
 }
 
 .img_container {
+  position: relative;
   width: 700px;
-  height: 550px;
   padding-bottom: 10px;
+  margin-bottom: 35px;
 }
 
 .meme {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+.text_top,
+.text_bottom {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.text_top {
+  top: 0;
+}
+
+.text_bottom {
+  bottom: 0;
+  margin-bottom: 25px;
 }
